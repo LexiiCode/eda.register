@@ -22,33 +22,35 @@ body {
 .logo {
     display: block;
     margin: 0 auto 20px;
-    max-width: 100%; /* Adaptar al contenedor */
+    max-width: 80%; /* Ajustar el tamaño de la imagen */
     height: auto; /* Mantener la proporción */
 }
 
 label {
     display: block;
-    margin: 15px 0 5px; /* Mayor margen superior */
+    margin: 10px 0 5px; /* Menor margen superior */
     color: #ffffff;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
 }
 
 input {
     border-radius: 4px;
     width: 100%;
-    padding: 10px;
+    padding: 8px; /* Menos padding para inputs */
     margin-bottom: 15px; /* Mayor margen inferior */
     border: 1px solid #ddd;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
 }
 
 button {
     background: #5d1658;
     color: #ffffff;
     border: none;
-    padding: 15px;
+    padding: 12px; /* Menos padding para el botón */
     border-radius: 100px;
     cursor: pointer;
     width: 100%; /* Ancho completo */
-    font-size: 20px;
+    font-size: 18px; /* Tamaño de fuente más pequeño */
 }
 
 button:hover {
