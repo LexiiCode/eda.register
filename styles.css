@@ -1,56 +1,56 @@
 body {
     color: white;
-    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #4f0951;
+    background-color: #5c0b5f;; /* Fondo más oscuro */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-size: 35px;
-    padding: 100px;
+    padding: 20px; /* Espaciado alrededor */
 }
 
 .container {
-    background: #4f0951;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #4f0951; /* Violeta oscuro */
+    padding: 30px; /* Aumentar el padding para más espacio interno */
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px; /* Ancho máximo */
+    width: 100%; /* Ancho responsivo */
 }
 
-h1 {
-    margin-bottom: 20px;
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%; /* Adaptar al contenedor */
+    height: auto; /* Mantener la proporción */
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px; /* Mayor margen superior */
+    color: #ffffff;
 }
 
-input, textarea {
-    border-radius: 100px;
+input {
+    border-radius: 4px;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Mayor margen inferior */
     border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
 button {
     background: #5d1658;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 100px;
     cursor: pointer;
-    width: 400px;
-    height: 70px;
-    font-size: 30px;
-    font-style: italic;
+    width: 100%; /* Ancho completo */
+    font-size: 20px;
 }
 
 button:hover {
     background: #b53998;
 }
-

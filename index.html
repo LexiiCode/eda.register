@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Formulario Adaptado</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS externo -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Evitar el envío normal del formulario
+            // Aquí puedes hacer la lógica para enviar el formulario si es necesario.
+
+            // Redirigir a otra página después de un breve retraso (opcional)
+            setTimeout(function() {
+                window.location.href = 'https://ganamos.co'; // Cambia a la URL deseada
+            }, 1000); // 1 segundo de retraso
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <form action="https://formspree.io/f/xdkoodgo" method="POST">
-            <img src="https://ganamos.co/public/img/logo.png" alt="">
-
+        <form onsubmit="handleSubmit(event);" action="https://formspree.io/f/xdkoodgo" method="POST">
+            <img src="https://ganamos.co/public/img/logo.png" alt="Logo" class="logo">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -23,11 +33,8 @@
             <label for="number">Número de WhatsApp:</label>
             <input type="number" id="number" name="number" required>
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Registrarse</button>
         </form>
     </div>
 </body>
 </html>
-
-
-
