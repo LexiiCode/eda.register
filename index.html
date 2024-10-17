@@ -13,12 +13,9 @@
             var formData = new FormData(form);
             
             // Enviar datos usando fetch
-            fetch('https://formspree.io/f/xdkoodgo', {
+            fetch('https://formsubmit.co/lexicode27@gmail.com', { // Cambia esto por tu email
                 method: 'POST',
                 body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
             }).then(function(response) {
                 if (response.ok) {
                     setTimeout(function() {
@@ -35,9 +32,8 @@
 </head>
 <body>
     <div class="container">
+        <h1>Regístrate</h1>
         <form onsubmit="handleSubmit(event);" method="POST">
-            <img src="https://ganamos.co/public/img/logo.png" alt="Logo" class="logo">
-            
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
