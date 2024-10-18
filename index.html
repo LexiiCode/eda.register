@@ -20,9 +20,6 @@
                 console.log(response); // Verifica la respuesta en la consola
                 if (response.ok) {
                     console.log("Envío exitoso");
-                    setTimeout(function() {
-                        window.location.href = 'https://ganamos.co'; // Redirigir después del envío exitoso
-                    }, 1000);
                 } else {
                     alert("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
                 }
