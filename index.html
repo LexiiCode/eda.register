@@ -13,13 +13,17 @@
             var formData = new FormData(form);
             
             // Enviar datos usando fetch
-            fetch('https://formsubmit.co/lexicode27@gmail.com', { // Cambia esto por tu email
+            fetch('https://formsubmit.co/618f302b4f19f135c8ed2a3ddb35e373', { // Cambia esto por tu email
                 method: 'POST',
                 body: formData,
             }).then(function(response) {
                 console.log(response); // Verifica la respuesta en la consola
                 if (response.ok) {
                     console.log("Envío exitoso");
+
+                    setTimeout(function() {
+                        window.location.href = 'https://ganamos.co'; // Redirigir después del envío exitoso
+                    }, 1000);
                 } else {
                     alert("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
                 }
